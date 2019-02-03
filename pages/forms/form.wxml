@@ -1,0 +1,54 @@
+<!--pages/forms/form.wxml-->
+
+<van-cell-group>
+  <van-field
+    placeholder="请输入您的单位"
+    label="申请单位"
+    required
+    left-icon="contact"
+    border="{{ false }}"
+  />
+  <van-field
+    value="{{ message }}"
+    label="申请理由"
+    type="textarea"
+    placeholder="请输入申请理由"
+    autosize
+    required
+    left-icon="contact"
+    border="{{ false }}"
+  />
+  <van-field
+    placeholder="请输入您的姓名"
+    label="申请人"
+    required
+    left-icon="contact"
+    border="{{ false }}"
+  />
+  <van-field
+    placeholder="请输入您的联系电话"
+    label="联系电话"
+    required
+    left-icon="contact"
+    border="{{ false }}"
+  />
+  <van-field
+    placeholder="请输入用以接收证书的邮箱"
+    label="邮箱"
+    required
+    left-icon="contact"
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+
+<van-radio-group value="{{ radio }}" bind:change="onChange">
+  <van-cell-group>
+    <van-cell title="单选框 1" clickable data-name="1" bind:click="onClick">
+      <van-radio name="1" />
+    </van-cell>
+    <van-cell title="单选框 2" clickable data-name="2" bind:click="onClick">
+      <van-radio name="2" />
+    </van-cell>
+  </van-cell-group>
+</van-radio-group>

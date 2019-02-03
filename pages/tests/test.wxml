@@ -1,0 +1,7 @@
+<!--pages/tests/test.wxml-->
+<view>
+<van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+/>
+</view>
